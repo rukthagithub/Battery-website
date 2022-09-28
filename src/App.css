@@ -1,0 +1,343 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container-ats {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* Navbar --start*/
+
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: visible;
+}
+
+.header-bg {
+    background-color: #185a80f0;
+    z-index: 100;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    margin: auto;
+    height: 100%;
+    /* overflow: visible; */
+}
+
+.textclass {
+    font-size: 0.8rem !important;
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+
+/* .nav-item a:hover{
+  color:#F6B803;
+} */
+
+.header .navbar img {
+    width: 205px;
+    height: auto;
+}
+
+.header .nav-menu {
+    display: flex;
+}
+
+.spacingYlogo {
+    padding-top: -40px;
+}
+
+.spacingYtext {
+    padding-top: -30px;
+}
+
+.spacinglogo {
+    padding-top: 10px;
+}
+
+.spacingtext {
+    padding-top: 60px;
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.rajez {
+    z-index: 99!important;
+}
+
+.hamburger {
+    display: none;
+}
+
+.dropdown-menu {
+    visibility: visible;
+}
+
+.dropdown-mobile {
+    display: none;
+}
+
+@media screen and (max-width:940px) {
+    .nav-item a {
+        color: #fff;
+    }
+    .header {
+        max-width: 100%;
+        background-color: #185A80;
+    }
+    .header .navbar {
+        max-width: 100%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+    .header .navbar img {
+        width: 150px;
+    }
+    .dropdown-menu {
+        visibility: hidden;
+    }
+    .dropdown-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 510px) and (max-width: 620px) {
+    .boxessingle {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (min-width: 621px) and (max-width: 770px) {
+    .boxessingle {
+        margin-top: 9rem;
+    }
+}
+
+
+/* Navbar--close */
+
+
+/* footerstart */
+
+.footerclass {
+    padding-top: 150px;
+    /* background-image: url(assets/images/banner3.png); */
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footerclass:before {
+    background: rgba(234, 29, 36, 0.4);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.input-glassmorphic {
+    outline: none;
+    border-radius: 8px;
+    background: #000;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff
+}
+
+.input-glassmorphics {
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff
+}
+
+.text-area {
+    resize: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* footerend */
+
+
+/* Gallery Random */
+
+.gallery {
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    /* Controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid. */
+}
+
+
+/* Stretch image vertically */
+
+.v-stretch {
+    grid-row: span 2;
+}
+
+
+/* Stretch image horizontally */
+
+.h-stretch {
+    grid-column: span 2;
+}
+
+
+/* Stretch image vertically and horizontally */
+
+.big-stretch {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Make the gallery items all matchy matchy on smaller screen sizes */
+
+@media screen and (max-width: 515px) {
+    .v-stretch {
+        grid-row: span 1;
+    }
+    .h-stretch {
+        grid-column: span 1;
+    }
+    .big-stretch {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+/* Gallery Random */
+
+
+/* extra */
+
+.textshadow {
+    text-shadow: 2px 2px #000;
+}
+
+.testSlider .slick-prev:before,
+.testSlider .slick-next:before {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 2px 2px 2px;
+}
+
+.proSlider .slick-prev:before,
+.proSlider .slick-next:before {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 2px 2px 2px;
+}
+
+
+/* blog */
+
+.shadow-box {
+    box-shadow: 6px 6px 26px rgba(43, 57, 144, 0.2);
+}
