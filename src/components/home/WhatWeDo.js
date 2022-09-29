@@ -60,11 +60,11 @@ const WhatWeDo = () => {
   ];
   return (
     <div className="bg-secondary py-16">
-      <div className="container-ats grid lg:grid-cols-12 items-center justify-between bg-white rounded-md drop-shadow-2xl shadow-xl">
+      <div className="container-ats grid lg:grid-cols-12 items-center justify-between   bg-white rounded-md drop-shadow-2xl shadow-xl">
         <div className="col-span-3">
           <img
             src="/assets/images/Group 413.png"
-            className="h-[395px] drop-shadow-2xl w-full"
+            className="h-[395px] drop-shadow-2xl w-full ml-[40px] lg:ml-[0px] lg:mb-0 mb-12 md:ml-[160px]"
           />
         </div>
         <div className="col-span-5 ">
@@ -103,7 +103,7 @@ const WhatWeDo = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4">
+        <div className="col-span-4 ml-[40px] lg:ml-[0px] md:ml-[160px]">
           <div class="grid grid-rows-4  grid-flow-col">
             {data.map((obj, e) => (
               <div

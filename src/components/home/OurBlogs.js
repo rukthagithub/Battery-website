@@ -11,7 +11,7 @@ const OurBlogs = () => {
     <>
       <div className="bg-secondary ">
         <div className="container-ats py-16 grid lg:grid-cols-12 grid-cols-1 gap-8  ">
-          <div class="bg-white shadow-md border col-span-5 border-gray-200 rounded overflow-hidden group">
+          <div class="bg-white shadow-md border col-span-5 border-gray-200 rounded overflow-hidden group lg:ml-0 ml-[40px]">
             <a href="#">
               <img
                 class="rounded-t-lg group-hover:scale-105 duration-300"
@@ -19,7 +19,7 @@ const OurBlogs = () => {
                 alt=""
               />
             </a>
-            <div class="p-5 space-y-4">
+            <div class="p-5 space-y-4  ">
               <a href="#">
                 <h5 class="text-gray-900 font-bold text-xl tracking-tight mb-2">
                   Lorem Ipsum is simply dummy text of the printing and

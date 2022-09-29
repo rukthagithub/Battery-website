@@ -32,23 +32,8 @@ const BannerSliderSlick = () => {
       id: 1,
       img: "/assets/images/bannerimg.png",
     },
-    {
-      id: 2,
-      img: "/assets/images/bannerTwo.png",
-    },
-    {
-      id: 3,
-      img: "/assets/images/bannerThree.png",
-    },
+   
   ];
-  const slider = useRef();
-
-  const next = () => {
-    slider.current.slickNext();
-  };
-  const pre = () => {
-    slider.current.slickPrev();
-  };
 
   const settings = {
     dots: false,
@@ -66,19 +51,16 @@ const BannerSliderSlick = () => {
   };
   return (
     <div className="relative">
-      <Slider ref={(c) => (slider.current = c)} {...settings}>
+  
         {Banner.map((e) => (
           <div id={e.id} className="relative">
             <img src={e.img} className=" w-full" />
-            <div className="absolute z-40 right-20 top-60  text-white w-24 h-24 bg-red-600 flex justify-center items-center">
-              <span className="text-4xl">0</span>
-              <p className="text-4xl">{e.id}</p>/3
-            </div>
+           
           </div>
         ))}
-      </Slider>
+   
 
-      <div className=" absolute space-y-6 top-60 left-16">
+      <div className=" lg:absolute lg:space-y-6 lg:top-60 left-16">
         <div className="w-[60%]">
           <div className="flex items-center gap-5">
             <div className="h-10 w-[0.15rem] bg-primary"></div>
@@ -101,7 +83,7 @@ const BannerSliderSlick = () => {
           </button>
         </div>
 
-        <div className="pr-16 pt-20">
+        <div className="pr-16 lg:pt-20">
           <div className="w-100 bg-[#000000c5] rounded-xl py-5  mx-auto lg:block hidden">
             <div className="px-20 ">
               <div className="grid lg:grid-cols-3   py-5  gap-7">
@@ -112,15 +94,15 @@ const BannerSliderSlick = () => {
                         <img src={item.img} alt="icon" className="w-20 h-10" />
                       </div>
                       <div>
-                        <h1 className="text-white text-lg font-semibold">
+                        <h1 className="lg:text-white text-lg font-semibold">
                           {" "}
                           {item.title}
                         </h1>
-                        <hr className="bg-white my-2" />
-                        <p className="text-white text-xs">{item.para}</p>
+                        <hr className="lg:bg-white my-2" />
+                        <p className="lg:text-white text-xs">{item.para}</p>
                         <BsArrowRight
                           size={24}
-                          className="text-white cursor-pointer hover:translate-x-2 duration-150 mt-2"
+                          className="lg:text-white cursor-pointer hover:translate-x-2 duration-150 mt-2"
                         />
                       </div>
                     </div>
@@ -136,14 +118,7 @@ const BannerSliderSlick = () => {
         className="absolute text-red-500 -top-10 right-7 flex items-center h-full gap-8 pr-12 flex-col justify-center"
         style={{ textAlign: "center" }}
       >
-        <div className="space-x-2">
-          <button className="button text-white prevArrow" onClick={pre}>
-            <RiArrowLeftSFill size={50} />
-          </button>
-          <button className="button text-white nextArrow" onClick={next}>
-            <RiArrowRightSFill size={50} />
-          </button>
-        </div>
+      
       </div>
     </div>
   );

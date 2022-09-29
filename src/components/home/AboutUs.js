@@ -68,7 +68,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:col-span-3 ">
             <div className="relative">
-              <div className="  h-24 w-24 p-3   bg-primary shadow-md absolute -left-10  bottom-0 bg-red-500">
+              <div className="  h-24 w-24 p-3   bg-primary shadow-md absolute lg:-left-10  bottom-0 bg-red-500">
                 <p className="text-2xl text-white font-bold text-center ">10+</p>
                 <p className="text-white text-[10px] text-center">
                   Years of Experience

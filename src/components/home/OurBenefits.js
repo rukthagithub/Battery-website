@@ -39,11 +39,11 @@ const OurBenefits = () => {
               </div>
               <img
                 src="/assets/images/benifits.png"
-                className="relative w-96 h-80"
+                className="relative w-96 h-80 "
               />
             </div>
-            <div class="group col-span-2 bg-secondary hover:bg-black flex justify-center items-center gap-2 duration-500">
-              <TbWorldUpload className="w-16 h-16 group-hover:text-white text-gray-700 group-hover:scale-105 duration-300" />
+            <div class="group col-span-2 bg-secondary  hover:bg-black flex justify-center items-center gap-2 duration-500 ">
+              <TbWorldUpload className="w-16 h-16 group-hover:text-white text-gray-700 group-hover:scale-105 duration-300 lg:block hidden md:block" />
               <h2 className="group-hover:text-white font-semibold">
                 WORLDWIDE SUPPORT
               </h2>

@@ -23,7 +23,7 @@ const ContactFooter = () => {
         alt=""
         className="absolute right-0 bottom-0 "
       />
-      <div className="grid lg:grid-cols-2  grid-cols-1   justify-between container-default py-20 items-center">
+      <div className="grid lg:grid-cols-2  grid-cols-1  lg:ml-0 ml-[40px]  justify-between container-default py-20 items-center">
         <div className="flex flex-col space-y-3 z-10">
           <h3 className="text-2xl text-white">
             Contact us to know more
@@ -63,8 +63,8 @@ const ContactFooter = () => {
           </p>
         </div>
 
-        <div className="w-full md:flex md:justify-end z-10">
-          <div className="w-[80%] rounded-xl border border-[#ffffff6a]  bg-[#ffffff14] p-8 flex flex-col space-y-5 justify-center items-center ">
+        <div className="w-full md:flex md:justify-end z-10 ">
+          <div className="w-[80%] rounded-xl border border-[#ffffff6a]  bg-[#ffffff14] p-8 flex flex-col space-y-5 justify-center items-center md:mr-[110px]">
             <input
               type="text"
               className="input-glassmorphic "
@@ -85,7 +85,7 @@ const ContactFooter = () => {
               rows={5}
               placeholder="Enter Your Message"
             ></textarea>
-            <button className="uppercase px-28 py-3  text-white bg-primary button-animate rounded-xl text-sm">
+            <button className="uppercase lg:px-28 py-3  text-white bg-primary button-animate rounded-xl text-sm">
               Submit Your Query
             </button>
           </div>

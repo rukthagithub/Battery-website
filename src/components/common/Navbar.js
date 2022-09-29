@@ -73,9 +73,14 @@ const Navbar = () => {
               Catalogue
             </Link>
           </li>
+          <li className="nav-item text-sm uppercase  nav-desk   text-white font-semibold hover:text-primary ">
+            <Link to="#" onClick={closeMenu}>
+            Contact Us
+            </Link>
+          </li>
         </ul>
         <div className=" md:block hidden group">
-          <div className=" px-8 py-2 text-sm uppercase  border-2 border-[#EC2028]  font-semibold  rounded-md  group-hover:bg-primary">
+          {/* <div className=" px-8 py-2 text-sm uppercase  border-2 border-[#EC2028]  font-semibold  rounded-md  group-hover:bg-primary">
             <Link
               to="/contact"
               onClick={closeMenu}
@@ -83,7 +88,7 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="hamburger" onClick={handleClick}>
